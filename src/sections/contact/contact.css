@@ -1,0 +1,115 @@
+.contact__container {
+  display: flex;
+  gap: 2rem;
+}
+.contact__option {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+}
+.card.contact__option {
+  background-color: var(--color-light);
+}
+.card.contact__option:hover {
+  border-color: var(--color-primary);
+}
+.contact__option-icon {
+  align-self: center;
+  font-size: 1.5rem;
+  color: var(--color-black);
+}
+.contact__option a {
+  color: var(--color-primary);
+}
+
+.contact__option h4 {
+  margin-bottom: -0.5rem;
+}
+
+form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--color-primary);
+  resize: none;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+textarea {
+  height: 8rem;
+}
+
+.btn {
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+#submitBtn:hover {
+  color: var(--color-black);
+}
+.error__msg {
+  color: red;
+  margin-top: -1rem;
+  height: 1.2rem;
+}
+
+.afterMessage {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+  width: auto;
+  max-width: 400px;
+  padding: 10px 20px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.success {
+  background-color: green;
+}
+.error {
+  background-color: red;
+}
+
+/* tablets */
+@media (max-width: 1024px) {
+  .contact__container {
+    flex-direction: column;
+  }
+}
+
+/* phones */
+@media (max-width: 600px) {
+  .contact__option {
+    padding: 2rem 0;
+  }
+
+  form {
+    padding: 2rem 0;
+  }
+  #contact > h2 {
+    padding: 2rem;
+  }
+}
