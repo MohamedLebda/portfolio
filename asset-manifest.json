@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.89522dad.css",
+    "main.js": "/portfolio/static/js/main.dc81f654.js",
+    "static/media/menu.png": "/portfolio/static/media/menu.99161e216ab70eee012c.png",
+    "static/media/weather-app.png": "/portfolio/static/media/weather-app.d5b88d46e3a557447b34.png",
+    "static/media/landing-page.png": "/portfolio/static/media/landing-page.e9d4c12b4e17f363241e.png",
+    "static/media/tours.png": "/portfolio/static/media/tours.0da4297d2cf179ffe3e7.png",
+    "static/media/meme-project.jpg": "/portfolio/static/media/meme-project.efa02a332285982331ca.jpg",
+    "static/media/Algorthmic-toolbox.PNG": "/portfolio/static/media/Algorthmic-toolbox.0c5ec8208cb79f8dbb6b.PNG",
+    "static/media/Advanced-React-Certificate.PNG": "/portfolio/static/media/Advanced-React-Certificate.af4e09e636201241cc9e.PNG",
+    "static/media/MohamedLebda.jpg": "/portfolio/static/media/MohamedLebda.8f9e1be5ba15e79c8cb2.jpg",
+    "static/media/faq.png": "/portfolio/static/media/faq.d42ba28a21ca76e6b97d.png",
+    "static/media/Mohamed-Lebda-CV.pdf": "/portfolio/static/media/Mohamed-Lebda-CV.281ebd23970f62acebec.pdf",
+    "static/media/Professional Front-End Web Development.PNG": "/portfolio/static/media/Professional Front-End Web Development.a9d86127e9954623ff98.PNG",
+    "static/media/about.mp4": "/portfolio/static/media/about.17b9075e23cc268fa19e.mp4",
+    "static/media/ml-logo.PNG": "/portfolio/static/media/ml-logo.74e6cf067ea91b0e74c3.PNG",
+    "static/media/freeCodeCamp-javascript.PNG": "/portfolio/static/media/freeCodeCamp-javascript.7c5e9f115d5336d6cae6.PNG",
+    "index.html": "/portfolio/index.html",
+    "main.89522dad.css.map": "/portfolio/static/css/main.89522dad.css.map",
+    "main.dc81f654.js.map": "/portfolio/static/js/main.dc81f654.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89522dad.css",
+    "static/js/main.dc81f654.js"
+  ]
+}
