@@ -51,7 +51,9 @@ textarea {
 textarea {
   height: 8rem;
 }
-
+label {
+  color: var(--color-black);
+}
 .btn {
   transition: var(--transition);
   -webkit-transition: var(--transition);

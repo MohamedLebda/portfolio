@@ -6,10 +6,10 @@ const Header = () => {
     <header id="header">
       <div className="container header__container">
         <div className="header__profile">
-          <img src={HeaderImg} alt="header image" />
+          <img src={HeaderImg} alt="header" />
         </div>
         <h3>Mohamed Lebda</h3>
-        <p>Building a contemporary, responsive, and speedy website for your business is just a click away!</p>
+        <p>Building a responsive, and speedy website for your business is just a click away!</p>
         <div className="header__cta">
           <a href="#contact" className="btn primary">Let's Talk</a>
           <a href="#portfolio" className="btn light">My Work</a>

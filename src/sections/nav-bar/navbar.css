@@ -48,11 +48,16 @@ nav {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  bottom: -15rem;
+  bottom: -11.5rem;
   right: 10px;
   padding: 2rem;
   gap: 2rem;
   box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 .primary__theme {
   display: flex;
@@ -87,4 +92,73 @@ nav {
   .nav__menu {
     display: none;
   }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-white);
+  border-radius: 3rem;
+  transition: 0.4s;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--color-white);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.bg__theme {
+  margin-left: 10px;
+  vertical-align: middle;
+  height: 20px;
+}
+
+.dark-mode {
+  display: flex;
+
+  gap: 1rem;
+}
+.dark-mode .icon {
+  font-size: 2.2rem;
+  color: var(--color-white);
 }

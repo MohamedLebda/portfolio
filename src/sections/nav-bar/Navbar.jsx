@@ -1,39 +1,48 @@
+import { useState, useEffect } from "react";
+import {  ThemeProvider, useTheme } from "../../context/themeContext"
 import "./navbar.css"
 import data from "./data"
 import { IoIosColorPalette } from "react-icons/io";
+import {CgDarkMode} from "react-icons/cg"
 import logo from "../../assests/ml-logo.PNG"
-import {  ThemeProvider, useTheme } from "../../context/themeContext"
-import { useState } from "react";
 import red from '../../assests/red.png'
 import blue from '../../assests/blue.png'
 import yellow from '../../assests/yellow.png'
 import green from '../../assests/green.png'
 import purple from '../../assests/purple.png'
-import white from '../../assests/white.png'
-import black from '../../assests/black.png'
 
 const Navbar = () => {
   const [showColors, setShowColors] = useState(false);
   const { setColor, setBgColor } = useTheme();
   const [selectedThemeIndex, setSelectedThemeIndex] = useState(null);
-  const [selectedBgThemeIndex, setSelectedBgThemeIndex] = useState(null);
+  const [isChecked, setIsChecked] = useState(false);
+  
+  useEffect(() => {
+    const savedCheckedValue = localStorage.getItem('isChecked');
+    if (savedCheckedValue) {
+      setIsChecked(JSON.parse(savedCheckedValue));
+    }
+  }, []);
 
   const handleThemeChange = (color, index) => {
     setColor(color);
     setShowColors(false);
     setSelectedThemeIndex(index);
   };
-  const handleBgThemeChange = (color, index) => {
+  const handleBgThemeChange = (color) => {
     setBgColor(color);
     setShowColors(false);
-    setSelectedBgThemeIndex(index);
   };
 
   const toggleColors = () => {
     setShowColors(!showColors);
   };
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);
+    localStorage.setItem('isChecked', JSON.stringify(event.target.checked));
+  };
 
- ;
+
   return (
     <ThemeProvider>
     <nav>
@@ -56,10 +65,16 @@ const Navbar = () => {
                   <img className={selectedThemeIndex === 3 ? 'active' : ''} onClick={() => handleThemeChange('#9E9D24', 3)}src={yellow} alt="yellow"/>
                   <img className={selectedThemeIndex === 4 ? 'active' : ''} onClick={() => handleThemeChange('hsl(var(--primary-hue), 89%, 41%)', 4)}src={purple} alt="purple"/>
                   </div>
-                  <h3>background</h3>
-                  <div className="bg__theme">
-                  <img className={selectedBgThemeIndex === 0 ? 'active__black' : ''} onClick={() => handleBgThemeChange('white', 0)} src={white} alt="white"/>
-                  <img className={selectedBgThemeIndex === 1 ? 'active' : ''} onClick={() => handleBgThemeChange('black', 1) } src={black} alt="black"/>
+                  <div className="dark-mode">
+                  <CgDarkMode className="icon"/>
+                  <label className="switch">
+                    <input type="checkbox" onChange={(e) => {
+                      handleCheckboxChange(e)
+                      handleBgThemeChange(e.target.checked)
+                      }}
+                       checked={isChecked}/>
+                    <span className="slider"></span>
+                  </label>
                   </div>
                 </div>
               )}

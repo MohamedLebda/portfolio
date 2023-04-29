@@ -87,8 +87,6 @@ header {
   .header__profile {
     width: 14rem;
     height: 17rem;
-    max-width: 60%;
-    max-height: 35vh;
   }
   .header__container p {
     width: 100%;

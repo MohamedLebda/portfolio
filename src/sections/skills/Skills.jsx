@@ -12,14 +12,14 @@ const Skills = () => {
             <article className='skills__details'>
             <BsPatchCheckFill className='skills__details-icon'/>
             <div>
-            <h4>HTML</h4>
+            <h4>React.Js</h4>
             </div>
             </article>
            
             <article className='skills__details'>
             <BsPatchCheckFill className='skills__details-icon'/>
             <div>
-            <h4>CSS</h4>
+            <h4>JavaScript</h4>
             </div>
             </article>
             <article className='skills__details'>
@@ -32,14 +32,14 @@ const Skills = () => {
             <BsPatchCheckFill className='skills__details-icon'/>
             <div>
               
-            <h4>JavaScript</h4>
+            <h4>CSS</h4>
               </div>
             </article>
             <article className='skills__details'>
             <BsPatchCheckFill className='skills__details-icon'/>
             <div>
               
-            <h4>React.Js</h4>
+            <h4>HTML</h4>
             </div>
             </article>
           </div>
