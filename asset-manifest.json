@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.89522dad.css",
-    "main.js": "/portfolio/static/js/main.dc81f654.js",
+    "main.css": "/portfolio/static/css/main.6e3d8a6d.css",
+    "main.js": "/portfolio/static/js/main.2e8cf401.js",
     "static/media/menu.png": "/portfolio/static/media/menu.99161e216ab70eee012c.png",
     "static/media/weather-app.png": "/portfolio/static/media/weather-app.d5b88d46e3a557447b34.png",
     "static/media/landing-page.png": "/portfolio/static/media/landing-page.e9d4c12b4e17f363241e.png",
@@ -14,14 +14,13 @@
     "static/media/Mohamed-Lebda-CV.pdf": "/portfolio/static/media/Mohamed-Lebda-CV.281ebd23970f62acebec.pdf",
     "static/media/Professional Front-End Web Development.PNG": "/portfolio/static/media/Professional Front-End Web Development.a9d86127e9954623ff98.PNG",
     "static/media/about.mp4": "/portfolio/static/media/about.17b9075e23cc268fa19e.mp4",
-    "static/media/ml-logo.PNG": "/portfolio/static/media/ml-logo.74e6cf067ea91b0e74c3.PNG",
     "static/media/freeCodeCamp-javascript.PNG": "/portfolio/static/media/freeCodeCamp-javascript.7c5e9f115d5336d6cae6.PNG",
     "index.html": "/portfolio/index.html",
-    "main.89522dad.css.map": "/portfolio/static/css/main.89522dad.css.map",
-    "main.dc81f654.js.map": "/portfolio/static/js/main.dc81f654.js.map"
+    "main.6e3d8a6d.css.map": "/portfolio/static/css/main.6e3d8a6d.css.map",
+    "main.2e8cf401.js.map": "/portfolio/static/js/main.2e8cf401.js.map"
   },
   "entrypoints": [
-    "static/css/main.89522dad.css",
-    "static/js/main.dc81f654.js"
+    "static/css/main.6e3d8a6d.css",
+    "static/js/main.2e8cf401.js"
   ]
 }
