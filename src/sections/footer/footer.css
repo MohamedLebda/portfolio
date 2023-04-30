@@ -4,17 +4,26 @@ footer {
   text-align: center;
   font-size: 0.9rem;
 }
-
-.footer__logo img {
-  width: 2.5rem;
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.footer__logo .logo {
+  padding: 0.5rem;
+  border: 4px solid white;
+  background-color: var(--color-primary);
   border-radius: 50%;
   overflow: hidden;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  margin-bottom: 2rem;
 }
+.logo h3 {
+  color: white;
+}
+
 .permalinks {
   display: flex;
   flex-wrap: wrap;

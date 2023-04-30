@@ -30,7 +30,7 @@ const About = () => {
             }
           </div>
           <p>
-          Actively learning and improving. Developing web applications using (ReactJS, NodeJS, JavaScript, HTML5, CSS3) 
+          Actively learning and improving. Developing web applications using (ReactJS, NodeJS, MongoDB, JavaScript, HTML5, CSS3) 
           </p>
           <a href={CV} download className='btn primary'>Download CV <AiOutlineDownload/></a>
         </div>

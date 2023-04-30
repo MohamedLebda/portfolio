@@ -53,7 +53,7 @@
 }
 .skills__details {
   display: flex;
-  gap: 1rem;
+  gap: 10%;
 }
 .skills__details-icon {
   margin-top: 6px;

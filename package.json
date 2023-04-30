@@ -1,7 +1,7 @@
 {
   "homepage": "http://MohamedLebda.github.io/portfolio",
   "name": "resume",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",

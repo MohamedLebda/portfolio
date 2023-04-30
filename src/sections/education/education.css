@@ -69,3 +69,12 @@
 .swiper-button-next {
   color: var(--color-primary) !important;
 }
+@media (max-width: 600px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+  .swiper {
+    width: auto !important;
+  }
+}

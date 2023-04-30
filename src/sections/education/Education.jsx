@@ -21,10 +21,10 @@ const Education = () => {
       navigation
       pagination={{ clickable: true }}
       breakpoints={{
-        800:{
+        700:{
           slidesPerView: 1,
         },
-        1024: {
+        800: {
           slidesPerView: 2,
         },
       }}
@@ -32,7 +32,7 @@ const Education = () => {
         {data.map( item =>
           <SwiperSlide className='education__item' key={item.id}>
             <div className="education__item-img">
-              <img src={item.image} alt="education image" />
+              <img src={item.image} alt="Certificate" />
             </div>
             <div className="education__content">
               <h4>{item.title}</h4>

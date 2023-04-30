@@ -1,11 +1,13 @@
 import React from 'react'
 import "./footer.css"
 import data from "../header/data"  
-import logo from "../../assests/ml-logo.PNG"
+
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'><img src={logo} alt="logo" /></a>
+      <a href="#" className='footer__logo'> <div className="logo">
+            <h3>ML</h3>
+          </div></a>
 
       <ul className='permalinks'>
         <li><a href="#">Home</a></li>
