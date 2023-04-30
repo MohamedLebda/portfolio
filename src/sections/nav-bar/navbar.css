@@ -40,6 +40,55 @@ nav {
   display: flex;
   gap: 3.5rem;
 }
+.nav__menu-btn {
+  display: none;
+  background-color: transparent;
+  border: 0px;
+  position: relative;
+}
+.nav__menu-icon {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.nav__menu-mobile {
+  position: absolute;
+  background-color: var(--color-primary);
+  padding: 1rem;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  top: 4rem;
+  transform: translateX(-50%);
+  gap: 1rem;
+  box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.nav__menu-mobile li {
+  text-align: left;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.nav__menu-mobile li:hover {
+  transform: translateX(1rem);
+  -webkit-transform: translateX(1rem);
+  -moz-transform: translateX(1rem);
+  -ms-transform: translateX(1rem);
+  -o-transform: translateX(1rem);
+}
+
 #theme__icon {
   background: transparent;
   color: white;
@@ -95,6 +144,9 @@ nav {
 @media (max-width: 1024px) {
   .nav__menu {
     display: none;
+  }
+  .nav__menu-btn {
+    display: block;
   }
 }
 

@@ -4,7 +4,7 @@ import "./navbar.css"
 import data from "./data"
 import { IoIosColorPalette } from "react-icons/io";
 import {CgDarkMode} from "react-icons/cg"
-import logo from "../../assests/ml-logo.PNG"
+import {RxHamburgerMenu} from "react-icons/rx"
 import red from '../../assests/red.png'
 import blue from '../../assests/blue.png'
 import yellow from '../../assests/yellow.png'
@@ -16,7 +16,8 @@ const Navbar = () => {
   const { setColor, setBgColor } = useTheme();
   const [selectedThemeIndex, setSelectedThemeIndex] = useState(null);
   const [isChecked, setIsChecked] = useState(false);
-  
+  const [showLinks, setShowLinks] = useState(false);
+
   useEffect(() => {
     const savedCheckedValue = localStorage.getItem('isChecked');
     if (savedCheckedValue) {
@@ -37,11 +38,15 @@ const Navbar = () => {
   const toggleColors = () => {
     setShowColors(!showColors);
   };
+
   const handleCheckboxChange = (event) => {
     setIsChecked(event.target.checked);
     localStorage.setItem('isChecked', JSON.stringify(event.target.checked));
   };
 
+  const toggleLinks = ()=>{
+    setShowLinks(prev=>!prev)
+  }
 
   return (
     <ThemeProvider>
@@ -55,6 +60,13 @@ const Navbar = () => {
         <ul className="nav__menu">
           {data.map(item =><li key={item.id}><a href={item.link}>{item.title}</a></li>)}
         </ul>
+        <button onClick={toggleLinks} className="nav__menu-btn">
+        <RxHamburgerMenu className="nav__menu-icon"/>
+       {showLinks && <ul className="nav__menu-mobile">
+          {data.map(item =><li key={item.id}><a href={item.link}>{item.title}</a></li>)}
+        </ul>}    
+        </button>
+       
         <button id="theme__icon" onClick={toggleColors}>
                 <IoIosColorPalette />
               </button>
