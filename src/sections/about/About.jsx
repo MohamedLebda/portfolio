@@ -1,7 +1,7 @@
 import React from 'react'
 import {AiOutlineDownload} from "react-icons/ai"
-import aboutVideo from '../../assests/about.mp4'
-import CV from"../../assests/Mohamed-Lebda-CV.pdf"
+import aboutVideo from '../../assets/about.mp4'
+import CV from"../../assets/Mohamed-Lebda-CV.pdf"
 import Card from "../../components/Card"
 import data from "./data"
 import "./about.css"

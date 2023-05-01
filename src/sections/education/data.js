@@ -1,7 +1,7 @@
-import AdvancedReact from "../../assests/Advanced-React-Certificate.PNG";
-import UCSanDiego from "../../assests/Algorthmic-toolbox.PNG";
-import FwdProf from "../../assests/Professional Front-End Web Development.PNG";
-import freeCodeCamp from "../../assests/freeCodeCamp-javascript.PNG";
+import AdvancedReact from "../../assets/Advanced-React-Certificate.PNG";
+import UCSanDiego from "../../assets/Algorthmic-toolbox.PNG";
+import FwdProf from "../../assets/Professional Front-End Web Development.PNG";
+import freeCodeCamp from "../../assets/freeCodeCamp-javascript.PNG";
 const data = [
   {
     id: 1,

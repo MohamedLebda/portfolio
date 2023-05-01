@@ -5,11 +5,11 @@ import data from "./data"
 import { IoIosColorPalette } from "react-icons/io";
 import {CgDarkMode} from "react-icons/cg"
 import {RxHamburgerMenu} from "react-icons/rx"
-import red from '../../assests/red.png'
-import blue from '../../assests/blue.png'
-import yellow from '../../assests/yellow.png'
-import green from '../../assests/green.png'
-import purple from '../../assests/purple.png'
+import red from '../../assets/red.png'
+import blue from '../../assets/blue.png'
+import yellow from '../../assets/yellow.png'
+import green from '../../assets/green.png'
+import purple from '../../assets/purple.png'
 
 const Navbar = () => {
   const [showColors, setShowColors] = useState(false);

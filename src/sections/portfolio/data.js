@@ -1,9 +1,9 @@
-import meme from "../../assests/meme-project.jpg";
-import tours from "../../assests/tours.png";
-import weather from "../../assests/weather-app.png";
-import landing from "../../assests/landing-page.png";
-import faq from "../../assests/faq.png";
-import menu from "../../assests/menu.png";
+import meme from "../../assets/meme-project.jpg";
+import tours from "../../assets/tours.png";
+import weather from "../../assets/weather-app.png";
+import landing from "../../assets/landing-page.png";
+import faq from "../../assets/faq.png";
+import menu from "../../assets/menu.png";
 const data = [
   {
     id: 1,
