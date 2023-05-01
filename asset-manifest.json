@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6e3d8a6d.css",
-    "main.js": "/portfolio/static/js/main.2e8cf401.js",
+    "main.css": "/portfolio/static/css/main.6900a110.css",
+    "main.js": "/portfolio/static/js/main.a3d24bd9.js",
     "static/media/menu.png": "/portfolio/static/media/menu.99161e216ab70eee012c.png",
     "static/media/weather-app.png": "/portfolio/static/media/weather-app.d5b88d46e3a557447b34.png",
     "static/media/landing-page.png": "/portfolio/static/media/landing-page.e9d4c12b4e17f363241e.png",
@@ -16,11 +16,11 @@
     "static/media/about.mp4": "/portfolio/static/media/about.17b9075e23cc268fa19e.mp4",
     "static/media/freeCodeCamp-javascript.PNG": "/portfolio/static/media/freeCodeCamp-javascript.7c5e9f115d5336d6cae6.PNG",
     "index.html": "/portfolio/index.html",
-    "main.6e3d8a6d.css.map": "/portfolio/static/css/main.6e3d8a6d.css.map",
-    "main.2e8cf401.js.map": "/portfolio/static/js/main.2e8cf401.js.map"
+    "main.6900a110.css.map": "/portfolio/static/css/main.6900a110.css.map",
+    "main.a3d24bd9.js.map": "/portfolio/static/js/main.a3d24bd9.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e3d8a6d.css",
-    "static/js/main.2e8cf401.js"
+    "static/css/main.6900a110.css",
+    "static/js/main.a3d24bd9.js"
   ]
 }
