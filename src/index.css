@@ -21,7 +21,7 @@
 
   /* general container variables */
   --container-width-lg: 76%;
-  --container-width-md: 98%;
+  --container-width-md: 96%;
 
   /* border radius variables*/
   --border-radius-1: 1.2rem;
@@ -147,6 +147,38 @@ h6 {
 .btn.sm {
   padding: 0.5rem 1.2rem;
 }
+/* general container class*/
+.container {
+  width: var(--container-width-lg);
+  margin-inline: auto;
+  max-width: 1920px;
+}
+
+/*section */
+section {
+  padding: 10rem 0;
+  background: var(--color-light);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+section:nth-child(even) {
+  background-color: var(--color-white);
+}
+
+section > h2 {
+  text-align: center;
+}
+
+section > p {
+  text-align: center;
+  margin: 0.5rem auto 4rem;
+  width: 40%;
+}
+
 /* tablets */
 @media (max-width: 1024px) {
   body {
@@ -192,35 +224,4 @@ h6 {
   section > p {
     width: var(--container-width-md);
   }
-}
-/* general container class*/
-.container {
-  width: var(--container-width-lg);
-  margin-inline: auto;
-  max-width: 1920px;
-}
-
-/*section */
-section {
-  padding: 10rem 0;
-  background: var(--color-light);
-  transition: var(--transition);
-  -webkit-transition: var(--transition);
-  -moz-transition: var(--transition);
-  -ms-transition: var(--transition);
-  -o-transition: var(--transition);
-}
-
-section:nth-child(even) {
-  background-color: var(--color-white);
-}
-
-section > h2 {
-  text-align: center;
-}
-
-section > p {
-  text-align: center;
-  margin: 0.5rem auto 4rem;
-  width: 40%;
 }

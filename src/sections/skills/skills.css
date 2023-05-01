@@ -8,7 +8,7 @@
 }
 .skills__container > div {
   background: var(--color-light);
-  padding: 2.4rem 5rem;
+  padding: 2.4rem 4rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
@@ -54,9 +54,7 @@
 .skills__details {
   display: flex;
   gap: 10%;
-}
-.skills__details-icon {
-  margin-top: 6px;
+  align-items: center;
 }
 
 /* tablets */
