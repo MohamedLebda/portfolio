@@ -66,19 +66,16 @@ nav {
 .nav__menu-mobile {
   position: absolute;
   background-color: var(--color-primary);
-  padding: 1rem;
-  width: 10rem;
+  padding: 5vh 1rem;
+  width: 15rem;
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  top: 4rem;
-  right: 0;
+  justify-content: space-evenly;
+  top: 3rem;
+  right: -1rem;
   gap: 1rem;
-  box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
+  animation: moveFromRight 1s ease-in-out forwards;
 }
 
 .nav__menu-mobile li {
@@ -91,11 +88,7 @@ nav {
 }
 
 .nav__menu-mobile li:hover {
-  transform: translateX(1rem);
-  -webkit-transform: translateX(1rem);
-  -moz-transform: translateX(1rem);
-  -ms-transform: translateX(1rem);
-  -o-transform: translateX(1rem);
+  padding-left: 1rem;
 }
 
 #theme__icon {
@@ -132,12 +125,10 @@ nav {
   border-radius: 50%;
   cursor: pointer;
 }
-.active {
+.active__icon {
   border: 2px solid white;
 }
-.active__black {
-  border: 2px solid black;
-}
+
 .theme__color > h3 {
   color: white;
 }
@@ -236,4 +227,21 @@ input:checked + .slider:before {
 .dark-mode .icon {
   font-size: 2.2rem;
   color: var(--color-white);
+}
+
+.active {
+  border: 0;
+  border-bottom: 1px solid white;
+  padding-bottom: 1.9rem;
+}
+
+@keyframes moveFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.8;
+  }
 }

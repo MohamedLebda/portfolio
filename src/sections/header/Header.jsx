@@ -3,7 +3,7 @@ import data from './data'
 import HeaderImg from '../../assets/MohamedLebda.jpg'
 const Header = () => {
   return (
-    <header id="header">
+    <section id="header">
       <div className="container header__container">
         <div className="header__profile">
           <img src={HeaderImg} alt="header" />
@@ -20,7 +20,7 @@ const Header = () => {
           }
         </div>
       </div>
-    </header>
+    </section>
   )
 }
 

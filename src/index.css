@@ -44,6 +44,7 @@ body {
 
 a {
   color: white;
+  cursor: pointer;
   transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
